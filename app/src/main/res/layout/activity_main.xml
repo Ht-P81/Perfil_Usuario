@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/purple_500">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/padding_comun"
+        android:paddingBottom="@dimen/padding_comun">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="@dimen/largo_radio_redondeo_foto_perfil"
+            app:cardElevation="@dimen/sombra_elevacion_foto">
+
+            <ImageView
+                android:id="@+id/imagen_perfil"
+                android:layout_width="@dimen/largo_imagen_perfil"
+                android:layout_height="@dimen/largo_imagen_perfil"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hierutime_profile" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_comun"
+            android:text="@string/hint_nombre"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tamaño_texto_perfil"
+            tools:text="Hierutime" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_comun"
+            android:text="@string/hint_email"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tamaño_texto_perfil_medio"
+            android:textStyle="italic"
+            android:autoLink="email"
+            android:linksClickable="false"
+            android:textColorLink="#2BB1BF"
+            tools:text="Hierutime@plazuela81.com" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_comun"
+            android:text="@string/hint_webside"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvWebSite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:autoLink="web"
+            android:textColorLink="#2BB1BF"
+            android:textSize="@dimen/tamaño_texto_perfil_medio"
+            android:linksClickable="true"
+            tools:text="www.plazuela81.com" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_comun"
+            android:text="@string/hint_telefono"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tvTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tamaño_texto_perfil_medio"
+            tools:text="0034 660 55 23 43" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_comun"
+            android:text="@string/hint_twitter"
+            android:textColor="@color/white" />
+
+        <!--suppress AndroidDomInspection -->
+        <TextView
+            android:id="@+id/tvTwitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tamaño_texto_perfil_medio"
+            tools:text="@Hierutime" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_comun"
+            android:text="@string/hint_Ubicacion"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvUbicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_map"
+            android:drawablePadding="@dimen/padding_iconos"
+            android:drawableTint="@color/white"
+            android:text="@string/main_show_map"
+            android:textColor="@color/white"
+            android:textSize="@dimen/tamaño_texto_perfil_medio"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_comun"
+            android:drawableLeft="@drawable/ic_baseline_settings_24"
+            android:drawablePadding="@dimen/padding_iconos"
+            android:drawableTint="@color/white"
+            android:text="@string/hint_habilitar"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</ScrollView>

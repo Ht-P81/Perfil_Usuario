@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".EditActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_comun">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/largo_imagen_perfil"
+            android:layout_height="@dimen/largo_imagen_perfil">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="@dimen/largo_radio_redondeo_foto_perfil">
+
+                <ImageView
+                    android:id="@+id/imagen_perfil"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher" />
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/btnSelectPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_search"
+                android:background="?selectableItemBackground"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding_comun"
+            android:layout_marginTop="@dimen/padding_comun"
+            android:hint="@string/hint_nombre">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etNombre"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding_comun"
+            android:layout_marginTop="@dimen/padding_comun"
+            android:hint="@string/hint_email">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etMail"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding_comun"
+            android:layout_marginTop="@dimen/padding_comun"
+            android:hint="@string/hint_webside">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etWebside"
+                android:inputType="textWebEditText"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding_comun"
+            android:layout_marginTop="@dimen/padding_comun"
+            android:hint="@string/hint_telefono">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etTelefono"
+                android:inputType="number|phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/padding_comun"
+            android:layout_marginTop="@dimen/padding_comun"
+            android:hint="@string/hint_twitter">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etTwitter"
+                android:inputType="textNoSuggestions"
+                android:imeOptions="actionNext"
+                android:nextFocusForward="@id/etLatitud"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/padding_comun"
+                android:layout_marginTop="@dimen/padding_comun">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginEnd="8dp"
+                android:hint="@string/hint_latitud">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etLatitud"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@id/etLongitud"
+                    android:inputType="numberDecimal|numberSigned"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:layout_marginStart="8dp"
+                android:hint="@string/hint_longitud">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etLongitud"
+                    android:inputType="numberDecimal|numberSigned"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+    </LinearLayout>
+</ScrollView>

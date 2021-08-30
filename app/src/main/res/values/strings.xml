@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Perfil_Usuario</string>
+
+    <string name="hint_nombre">Nombre:</string>
+    <string name="hint_email">Email:</string>
+    <string name="hint_webside">Sitio Web:</string>
+    <string name="hint_facebook">Facebook:</string>
+    <string name="hint_telefono">Telefono:</string>
+    <string name="hint_twitter">Twitter:</string>
+    <string name="hint_Ubicacion">Ubicación:</string>
+
+    <string name="main_show_map">Ver mapa</string>
+    <string name="hint_habilitar">Habilitar ubicación</string>
+    <string name="editar_titulo">Editar datos de usuario</string>
+    <string name="hint_latitud">Latitud</string>
+    <string name="hint_longitud">Longitud</string>
+
+    <string name="key_nombre">key_nombre</string>
+    <string name="key_email">key_email</string>
+    <string name="key_website">key_website</string>
+    <string name="key_facebook">key_facebook</string>
+    <string name="key_twitter">key_twitter</string>
+    <string name="key_latitud">key_latitud</string>
+    <string name="key_longitud">key_longitud</string>
+    <string name="key_telefono">0034 660 55 23 43</string>
+    <string name="key_foto">Foto perfil</string>
+
+    <string name="profile_error_no_resolve">no encuentra app compatible</string>
+
+    <string name="settings_title">Configuración</string>
+    <string name="titulo_app">Perfil de Usuario</string>
+
+    <string name="preferences_touch_title">Touch</string>
+    <string name="preferences_enable_clicks">Habilitar clicks</string>
+    <string name="preferences_key_enable_clicks">pref_enable_clicks</string>
+    <string name="preferences_data_title">Datos</string>
+    <string name="preferences_delete_data">Eliminar datos de usuario</string>
+    <string name="preferences_dey_delete_data">pref_delete_data</string>
+    <string name="preferences_restore_data">Restaurar datos y configuraciones</string>
+    <string name="preferences_dey_restore_data">pref_restart_data</string>
+
+    <string name="preferences_img_size_small">pequeña</string>
+    <string name="preferences_img_size_medium">mediana</string>
+    <string name="preferences_img_size_large">grande</string>
+
+    <string name="preferences_key_img_size_small">pref_pequeña</string>
+    <string name="preferences_key_img_size_medium">pref_mediana</string>
+    <string name="preferences_key_img_size_large">pref_grande</string>
+    <string name="preferences_ui_title">Interfaz</string>
+    <string name="preferences_ui_img_size">Tamaño de la imagen</string>
+    <string name="preferences_key_ui_img_size">pref_ui_img_size</string>
+    <string name="preferences_delete_configuration">Borrar configuraciones</string>
+    <string name="preferences_key_delete_configuration">borrarconfiguraciones</string>
+
+</resources>

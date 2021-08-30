@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_comun">16dp</dimen>
+    <dimen name="largo_imagen_perfil">256dp</dimen>
+    <dimen name="medio_imagen_perfil">160dp</dimen>
+    <dimen name="pequeño_imagen_perfil">96dp</dimen>
+    <dimen name="largo_radio_redondeo_foto_perfil">128dp</dimen>
+    <dimen name="sombra_elevacion_foto">20dp</dimen>
+    <dimen name="tamaño_texto_perfil">24sp</dimen>
+    <dimen name="tamaño_texto_perfil_medio">18sp</dimen>
+    <dimen name="padding_iconos">10dp</dimen>
+    <dimen name="tamaño_texto_perfil_bajo">12sp</dimen>
+</resources>
